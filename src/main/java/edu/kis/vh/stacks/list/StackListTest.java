@@ -15,10 +15,10 @@ public class StackListTest {
         final StackList stackList = new StackList();
 
         //when:
-        stackList.pushElement(12);
+        stackList.push(12);
 
         //then:
-        assertThat(stackList.peek(),is(ANY_VALUE));
+        assertThat(stackList.top(),is(ANY_VALUE));
     }
 
     @Test
@@ -27,7 +27,7 @@ public class StackListTest {
         final StackList stackList = new StackList();
 
         //when:
-        Boolean result = stackList.empty();
+        Boolean result = stackList.isEmpty();
 
         //then:
         assertThat(result,is(true));
@@ -40,7 +40,7 @@ public class StackListTest {
         final StackList stackList = new StackList();
 
         //when:
-        int result = stackList.peek();
+        int result = stackList.top();
 
         //then:
         assertThat(result,is(EXPECTED_NEGATIVE_VALUE));
@@ -50,10 +50,10 @@ public class StackListTest {
     public void shouldReturnValueOfPeek() throws Exception {
         //given:
         final StackList stackList = new StackList();
-        stackList.pushElement(ANY_VALUE);
+        stackList.push(ANY_VALUE);
 
         //when:
-        int result = stackList.peek();
+        int result = stackList.top();
 
         //then:
         assertThat(result,is(ANY_VALUE));
@@ -63,7 +63,7 @@ public class StackListTest {
     public void shouldPopElement() throws Exception {
         //given:
         final StackList stackList = new StackList();
-        stackList.pushElement(ANY_VALUE);
+        stackList.push(ANY_VALUE);
 
         //when:
         int result = stackList.pop();
@@ -76,12 +76,12 @@ public class StackListTest {
     public void shouldStackBeEmptyAfterPop() throws Exception {
         //given:
         final StackList stackList = new StackList();
-        stackList.pushElement(ANY_VALUE);
+        stackList.push(ANY_VALUE);
 
         //when:
         stackList.pop();
 
         //then:
-        assertThat(stackList.empty(),is(true));
+        assertThat(stackList.isEmpty(),is(true));
     }
 }

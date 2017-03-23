@@ -30,20 +30,6 @@ public class stackTest {
 	}
 
 	@Test
-	public void testIsFull() {
-		Stack stackObj = new Stack();
-		final int STACK_CAPACITY = 12;
-		for (int i = 0; i < STACK_CAPACITY; i++) {
-			boolean result = stackObj.isFull();		
-			Assert.assertEquals(false, result);
-			stackObj.push(888);
-		}
-		
-		boolean result = stackObj.isFull();
-		Assert.assertEquals(true, result);
-	}
-
-	@Test
 	public void testTop() {
 		Stack stackObj = new Stack();
 		final int EMPTY_STACK_VALUE = -1;
