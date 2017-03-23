@@ -35,6 +35,6 @@ public class Stack {
 		return stackList.pop();
 	}
 	
-	
+	//Now it's possible to use StackArray and Stacklist
 
 }
