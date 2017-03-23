@@ -4,7 +4,6 @@ import edu.kis.vh.stacks.StackInterface;
 
 public class StackArray  implements StackInterface {
 	private final int size = 12;
-	private final int emptyStack = -1;
 	private int[] ITEMS = new int[size];
 
 	private int total = emptyStack;

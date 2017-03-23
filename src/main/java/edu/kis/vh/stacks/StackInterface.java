@@ -2,6 +2,8 @@ package edu.kis.vh.stacks;
 
 public interface StackInterface {
 
+	int emptyStack = -1;
+
 	/**
 	 * Ta metoda dodaje nowe elementy do stosu
 	 * @param i to element ktory bedzie dodany
