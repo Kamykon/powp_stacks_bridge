@@ -25,7 +25,7 @@ public class StackList {
 	public int peek() {
 		if (empty())
 			return -1;
-		return last.getValue;
+		return last.getValue();
 	}
 
 	public int pop() {
