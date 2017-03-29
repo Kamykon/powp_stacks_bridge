@@ -3,16 +3,23 @@ package edu.kis.vh.stacks.demo;
 import edu.kis.vh.stacks.StackHanoi;
 import edu.kis.vh.stacks.Stack;
 import edu.kis.vh.stacks.factory.DefaultStacksFactory;
+import edu.kis.vh.stacks.factory.ArrayStacksFactory;
+import edu.kis.vh.stacks.factory.ListStacksFactory;
+import edu.kis.vh.stacks.factory.StacksFactory;
 
 class StacksDemo {
 
 	public static void main(String[] args) {
 		DefaultStacksFactory factory = new DefaultStacksFactory();
+		ArrayStacksFactory arrayFactory = new ArrayStacksFactory();
+		ListStacksFactory listFactory = new ListStacksFactory();
 
 		testStacks(factory);
+		testStacks(arrayFactory);
+		testStacks(listFactory);
 	}
 
-	private static void testStacks(DefaultStacksFactory factory) {
+	private static void testStacks(StacksFactory factory) {
         Stack[] stacks = {
                 factory.getStandardStack(),
                 factory.getFalseStack(),
