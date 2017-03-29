@@ -4,7 +4,7 @@ import edu.kis.vh.stacks.collections.StackList;
 
 public class StackFIFO extends Stack {
 
-	private Stack temp = new Stack();
+	private StackList temp = new StackList();//brak ograniczen co do ilosci elementow
 
 	public StackFIFO() {
  		super();
