@@ -2,7 +2,7 @@ package edu.kis.vh.stacks;
 
 public interface StackInterface {
 
-	int emptyStack = -1;
+	int emptyStack = 0;
 
 	/**
 	 * Ta metoda dodaje nowe elementy do stosu
@@ -32,4 +32,5 @@ public interface StackInterface {
 	 */
 	int pop();
 
+	//Realizacja 10 zadania pomogla bo musial zmienic wartosc tylko w jednym miejscu
 }
