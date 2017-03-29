@@ -10,7 +10,7 @@ public class Stack {
 		stackList = new StackList();
 	}
 
-	public Stack(StackList stackList) {
+	public Stack(StackInteraface stackList) {
 		super();
 		this.stackList = stackList;
 	}
